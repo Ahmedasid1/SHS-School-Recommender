@@ -6,8 +6,16 @@ estimates eligible school categories using aggregate cutoffs, and lists matching
 > **Important:** the Category A/B/C aggregate cutoffs are an unofficial heuristic, not an official
 > CSSPS rule. CSSPS categories classify schools, and placement depends on candidate performance,
 > school/programme choices, and available spaces. This tool does not predict placement or guarantee
-> admission. School data comes from a 2019 list (`data/schools.csv`, extracted by
-> `scripts/extract_pdf.py`) and has not been fully verified.
+> admission.
+
+## School data
+
+`data/schools.csv` contains 584 schools from the 2019 Ghana Education Service (GES) list. The
+project owner confirms this is the updated GES data being used for the project. The repository
+does not record when the source file was obtained. The data was extracted with
+`scripts/extract_pdf.py`; automated tests check for missing fields, duplicate school names,
+and invalid category, gender, residency, or programme values. These checks validate the CSV's
+structure and consistency, not the source's accuracy.
 
 The current heuristic uses maximum aggregates of 10 for Category A, 20 for Category B, and 54
 for Category C. A candidate is estimated to meet a category cutoff when their aggregate is at or

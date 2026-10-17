@@ -1,7 +1,9 @@
-﻿import pytest
+import csv
+
+import pytest
 
 from app.core.calculator import compute_aggregate, estimated_categories
-from app.tools.matcher import load_schools, match_schools
+from app.tools.matcher import DEFAULT_DATA, PROGRAMMES, load_schools, match_schools
 
 CORE = {"english": 2, "mathematics": 3, "science": 2, "social_studies": 3}
 
@@ -38,6 +40,31 @@ def test_real_data_loaded():
     schools = load_schools()
     assert len(schools) > 500
     assert {s.category for s in schools} == {"A", "B", "C"}
+
+
+def test_school_csv_has_complete_unique_records_and_valid_values():
+    expected_fields = ["school", "category", "region", "gender", "residency", *PROGRAMMES]
+    with DEFAULT_DATA.open(newline="", encoding="utf-8") as school_file:
+        reader = csv.DictReader(school_file)
+        assert reader.fieldnames == expected_fields
+        rows = list(reader)
+
+    assert rows
+    assert all(all(row[field].strip() for field in expected_fields) for row in rows)
+    assert {row["category"].strip().upper() for row in rows} == {"A", "B", "C"}
+    assert all(row["gender"].strip().lower() in {"boys", "girls", "mixed"} for row in rows)
+    assert all(
+        row["residency"].strip().lower() in {"day", "boarding", "day/boarding"}
+        for row in rows
+    )
+    assert all(
+        row[programme].strip().lower() in {"yes", "no"}
+        for row in rows
+        for programme in PROGRAMMES
+    )
+
+    school_names = [row["school"].strip().casefold() for row in rows]
+    assert len(school_names) == len(set(school_names))
 
 
 def test_categories_are_school_groups_and_gender_filter():
