@@ -56,10 +56,47 @@ uvicorn main:app --reload
 Optional filters: `gender` (male/female), `region`, `residency` (day/boarding), `programme`
 (agric, business, technical, home_economics, visual_arts, general_arts, science).
 
-Docker: `docker compose up --build`
+Docker (starts Ollama, pulls the models, builds the index, serves the API on port 8000; the first run downloads the models):
+`docker compose up --build`
+
+## AI assistant (Ollama + RAG)
+
+`POST /ask` with `{"message": "..."}` returns `{"answer", "sources", "tool_calls"}`. A local Ollama
+model (default `llama3.2`) chooses tools and writes the explanation; all facts come from code or
+retrieval:
+
+| Tool | Backed by |
+|------|-----------|
+| `compute_aggregate` | the aggregate calculator |
+| `find_schools` / `recommend_schools` | the school matcher over `data/schools.csv` |
+| `search_knowledge` | RAG over `data/knowledge/` and per-school profiles |
+
+RAG: documents (`.md`, `.txt`, `.pdf`) in `data/knowledge/` are chunked (800 characters, 100 overlap),
+embedded with `nomic-embed-text`, and stored in `data/index/index.json` (cosine search, cached in
+memory). Passages scoring below `RAG_MIN_SCORE` (default 0.65, calibrated on sample queries) are
+discarded, so the assistant says it has no information instead of guessing. Sources are returned
+with each answer.
+
+Local run (Ollama must be running with the models pulled):
+
+```
+ollama pull llama3.2
+ollama pull nomic-embed-text
+python -m app.rag.build_index
+uvicorn main:app --reload
+```
+
+Re-run `python -m app.rag.build_index` after changing anything in `data/knowledge/`. Configuration
+is by environment variable (see `.env.example`).
+
+Known limitation: `llama3.2` (3B) is a small model. It sometimes chains tool calls badly or writes a
+tool call as text, so the app runs one tool per step, recovers text-form calls, validates every
+argument, and suppresses leaked tool text. Answers about schools should still be checked against GES.
 
 ## Tests
 
 ```
 pytest
 ```
+
+The assistant tests use a scripted fake model, so they run without Ollama.
