@@ -28,8 +28,10 @@ def main() -> None:
         p.error(str(exc))
 
     print(f"Aggregate: {result['aggregate']}")
-    print(f"Qualifies for categories: {', '.join(result['qualifying_categories'])}")
-    print(f"Eligible schools: {result['total_schools']}")
+    print(f"Estimated categories: {', '.join(result['estimated_categories']) or 'none'}")
+    print(result["category_estimate_note"])
+    print(f"Schools matching filters: {result['total_schools']}")
+    print(result["placement_note"])
     for cat, items in result["schools_by_category"].items():
         print(f"\nCategory {cat} ({len(items)})")
         for s in items[: a.limit]:

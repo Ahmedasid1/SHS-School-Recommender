@@ -1,6 +1,6 @@
 ﻿import pytest
 
-from app.core.calculator import compute_aggregate, qualifying_categories
+from app.core.calculator import compute_aggregate, estimated_categories
 from app.tools.matcher import load_schools, match_schools
 
 CORE = {"english": 2, "mathematics": 3, "science": 2, "social_studies": 3}
@@ -25,10 +25,13 @@ def test_too_few_electives_rejected():
         compute_aggregate(CORE, {"a": 1})
 
 
-def test_categories():
-    assert qualifying_categories(8) == ["A", "B", "C"]
-    assert qualifying_categories(25) == ["C"]
-    assert qualifying_categories(54) == ["C"]
+@pytest.mark.parametrize(
+    ("aggregate", "expected"),
+    [(10, ["A", "B", "C"]), (11, ["B", "C"]), (20, ["B", "C"]),
+     (21, ["C"]), (54, ["C"]), (55, [])],
+)
+def test_unofficial_category_cutoff_estimates(aggregate, expected):
+    assert estimated_categories(aggregate) == expected
 
 
 def test_real_data_loaded():
@@ -37,12 +40,15 @@ def test_real_data_loaded():
     assert {s.category for s in schools} == {"A", "B", "C"}
 
 
-def test_category_eligibility_and_gender():
+def test_categories_are_school_groups_and_gender_filter():
     schools = load_schools()
-    assert any(s.category == "A" for s in match_schools(8, schools))
-    assert all(s.category == "C" for s in match_schools(30, schools))
-    girls_view = match_schools(8, schools, gender="male")
-    assert girls_view and all(s.gender != "girls" for s in girls_view)
+    assert {s.category for s in match_schools(8, schools)} == {"A", "B", "C"}
+    assert {s.category for s in match_schools(16, schools)} == {"B", "C"}
+    assert {s.category for s in match_schools(30, schools)} == {"C"}
+    boys_view = match_schools(8, schools, gender="male")
+    assert boys_view and all(s.gender != "girls" for s in boys_view)
+    girls_view = match_schools(8, schools, gender="female")
+    assert girls_view and all(s.gender != "boys" for s in girls_view)
 
 
 def test_region_residency_programme_filters():

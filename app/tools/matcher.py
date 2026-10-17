@@ -3,7 +3,7 @@ import csv
 from dataclasses import dataclass
 from pathlib import Path
 
-from app.core.calculator import qualifying_categories
+from app.core.calculator import estimated_categories
 
 DEFAULT_DATA = Path(__file__).resolve().parents[2] / "data" / "schools.csv"
 PROGRAMMES = ("agric", "business", "technical", "home_economics", "visual_arts", "general_arts", "science")
@@ -44,12 +44,12 @@ def match_schools(
     residency: str | None = None,
     programme: str | None = None,
 ) -> list[School]:
-    """Schools the candidate can apply to (category-eligible), best category first."""
-    allowed = qualifying_categories(aggregate)
+    """Schools matching the aggregate heuristic and selected filters."""
+    estimated = estimated_categories(aggregate)
     wanted_gender = _GENDER_ALIASES.get(gender.lower(), gender.lower()) if gender else None
     result = []
     for s in schools:
-        if s.category not in allowed:
+        if s.category not in estimated:
             continue
         if wanted_gender and s.gender not in ("mixed", wanted_gender):
             continue

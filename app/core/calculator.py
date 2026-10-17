@@ -4,9 +4,8 @@ CORE_SUBJECTS = ("english", "mathematics", "science", "social_studies")
 BEST_ELECTIVES = 2
 MIN_GRADE, MAX_GRADE = 1, 9
 
-# Maximum aggregate a candidate may have to qualify for each category.
-# Placeholder values: replace with the official cut-offs.
-# PLACEHOLDER limits - replace with the official CSSPS category bands.
+
+# Unofficial aggregate heuristic; not a CSSPS placement rule.
 CATEGORY_MAX_AGGREGATE = {"A": 10, "B": 20, "C": 54}
 
 
@@ -32,6 +31,6 @@ def compute_aggregate(core: dict[str, int], electives: dict[str, int]) -> int:
     return sum(core[s] for s in CORE_SUBJECTS) + sum(best)
 
 
-def qualifying_categories(aggregate: int) -> list[str]:
-    """Categories whose aggregate limit the candidate meets, best category first."""
-    return [c for c, limit in CATEGORY_MAX_AGGREGATE.items() if aggregate <= limit]
+def estimated_categories(aggregate: int) -> list[str]:
+    """Estimate categories using the project's unofficial aggregate cutoffs."""
+    return [category for category, limit in CATEGORY_MAX_AGGREGATE.items() if aggregate <= limit]
