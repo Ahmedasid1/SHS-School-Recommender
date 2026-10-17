@@ -1,0 +1,11 @@
+school,category,region,gender,residency,programme,cutoff_aggregate
+Sample Girls SHS,A,Greater Accra,female,boarding,General Science,8
+Sample Girls SHS,A,Greater Accra,female,boarding,General Arts,10
+Sample Boys SHS,A,Ashanti,male,boarding,General Science,9
+Sample Boys SHS,A,Ashanti,male,boarding,Business,10
+Sample Mixed SHS,B,Central,mixed,boarding,General Arts,18
+Sample Mixed SHS,B,Central,mixed,day,Business,20
+Sample Day SHS,C,Eastern,mixed,day,Visual Arts,28
+Sample Day SHS,C,Eastern,mixed,day,Home Economics,30
+Sample Community SHS,D,Northern,mixed,day,Agricultural Science,45
+Sample Community SHS,D,Northern,mixed,day,General Arts,54
