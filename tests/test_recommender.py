@@ -1,7 +1,7 @@
-import pytest
+﻿import pytest
 
 from app.core.calculator import compute_aggregate, qualifying_categories
-from app.tools.matcher import load_offerings, match_offerings
+from app.tools.matcher import load_schools, match_schools
 
 CORE = {"english": 2, "mathematics": 3, "science": 2, "social_studies": 3}
 
@@ -26,20 +26,27 @@ def test_too_few_electives_rejected():
 
 
 def test_categories():
-    assert qualifying_categories(8) == ["A", "B", "C", "D"]
-    assert qualifying_categories(25) == ["C", "D"]
-    assert qualifying_categories(54) == ["D"]
+    assert qualifying_categories(8) == ["A", "B", "C"]
+    assert qualifying_categories(25) == ["C"]
+    assert qualifying_categories(54) == ["C"]
 
 
-def test_matching_filters_by_cutoff_and_gender():
-    offerings = load_offerings()
-    names = {o.school for o in match_offerings(9, offerings, gender="male")}
-    assert "Sample Boys SHS" in names
-    assert "Sample Girls SHS" not in names
-    assert all(o.cutoff_aggregate >= 9 for o in match_offerings(9, offerings))
+def test_real_data_loaded():
+    schools = load_schools()
+    assert len(schools) > 500
+    assert {s.category for s in schools} == {"A", "B", "C"}
 
 
-def test_matching_filters_by_region_and_residency():
-    offerings = load_offerings()
-    assert {o.region for o in match_offerings(20, offerings, region="central")} == {"Central"}
-    assert {o.residency for o in match_offerings(20, offerings, residency="day")} == {"day"}
+def test_category_eligibility_and_gender():
+    schools = load_schools()
+    assert any(s.category == "A" for s in match_schools(8, schools))
+    assert all(s.category == "C" for s in match_schools(30, schools))
+    girls_view = match_schools(8, schools, gender="male")
+    assert girls_view and all(s.gender != "girls" for s in girls_view)
+
+
+def test_region_residency_programme_filters():
+    schools = load_schools()
+    r = match_schools(30, schools, region="ashanti", residency="day", programme="science")
+    assert r and all(s.region == "Ashanti" and "day" in s.residency.split("/")
+                     and "science" in s.programmes for s in r)

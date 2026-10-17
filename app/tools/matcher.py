@@ -3,53 +3,61 @@ import csv
 from dataclasses import dataclass
 from pathlib import Path
 
+from app.core.calculator import qualifying_categories
+
 DEFAULT_DATA = Path(__file__).resolve().parents[2] / "data" / "schools.csv"
+PROGRAMMES = ("agric", "business", "technical", "home_economics", "visual_arts", "general_arts", "science")
+_GENDER_ALIASES = {"male": "boys", "boy": "boys", "boys": "boys",
+                   "female": "girls", "girl": "girls", "girls": "girls"}
 
 
 @dataclass(frozen=True)
-class Offering:
-    school: str
+class School:
+    name: str
     category: str
     region: str
     gender: str
     residency: str
-    programme: str
-    cutoff_aggregate: int
+    programmes: tuple[str, ...]
 
 
-def load_offerings(path: Path = DEFAULT_DATA) -> list[Offering]:
+def load_schools(path: Path = DEFAULT_DATA) -> list[School]:
     with open(path, newline="", encoding="utf-8") as f:
         return [
-            Offering(
-                school=r["school"].strip(),
+            School(
+                name=r["school"].strip(),
                 category=r["category"].strip().upper(),
                 region=r["region"].strip(),
                 gender=r["gender"].strip().lower(),
                 residency=r["residency"].strip().lower(),
-                programme=r["programme"].strip(),
-                cutoff_aggregate=int(r["cutoff_aggregate"]),
+                programmes=tuple(p for p in PROGRAMMES if r[p].strip().lower() == "yes"),
             )
             for r in csv.DictReader(f)
         ]
 
 
-def match_offerings(
+def match_schools(
     aggregate: int,
-    offerings: list[Offering],
+    schools: list[School],
     gender: str | None = None,
     region: str | None = None,
     residency: str | None = None,
-) -> list[Offering]:
-    """Offerings the candidate can apply to, best (most competitive) schools first."""
+    programme: str | None = None,
+) -> list[School]:
+    """Schools the candidate can apply to (category-eligible), best category first."""
+    allowed = qualifying_categories(aggregate)
+    wanted_gender = _GENDER_ALIASES.get(gender.lower(), gender.lower()) if gender else None
     result = []
-    for o in offerings:
-        if aggregate > o.cutoff_aggregate:
+    for s in schools:
+        if s.category not in allowed:
             continue
-        if gender and o.gender not in ("mixed", gender.lower()):
+        if wanted_gender and s.gender not in ("mixed", wanted_gender):
             continue
-        if region and o.region.lower() != region.lower():
+        if region and s.region.lower() != region.lower():
             continue
-        if residency and o.residency != residency.lower():
+        if residency and residency.lower() not in s.residency.split("/"):
             continue
-        result.append(o)
-    return sorted(result, key=lambda o: (o.category, o.cutoff_aggregate, o.school, o.programme))
+        if programme and programme.lower() not in s.programmes:
+            continue
+        result.append(s)
+    return sorted(result, key=lambda s: (s.category, s.name))

@@ -1,4 +1,4 @@
-"""BECE aggregate calculation and category qualification."""
+﻿"""BECE aggregate calculation and category qualification."""
 
 CORE_SUBJECTS = ("english", "mathematics", "science", "social_studies")
 BEST_ELECTIVES = 2
@@ -6,7 +6,8 @@ MIN_GRADE, MAX_GRADE = 1, 9
 
 # Maximum aggregate a candidate may have to qualify for each category.
 # Placeholder values: replace with the official cut-offs.
-CATEGORY_MAX_AGGREGATE = {"A": 10, "B": 20, "C": 30, "D": 54}
+# PLACEHOLDER limits - replace with the official CSSPS category bands.
+CATEGORY_MAX_AGGREGATE = {"A": 10, "B": 20, "C": 54}
 
 
 def _validate(subject: str, grade: int) -> None:
