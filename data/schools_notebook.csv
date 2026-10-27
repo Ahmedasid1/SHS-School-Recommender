@@ -1,0 +1,585 @@
+school,category,region,gender,residency,agric,business,technical,home_economics,visual_arts,general_arts,science
+Aburi Girls Senior High,A,Eastern,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Accra Academy,A,Greater Accra,boys,day/boarding,yes,yes,no,no,yes,yes,yes
+Accra Girls Senior High,A,Greater Accra,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Achimota Senior High,A,Greater Accra,mixed,day/boarding,yes,no,no,yes,yes,yes,yes
+Adisadel College,A,Central,boys,day/boarding,no,yes,no,no,yes,yes,yes
+Archbishop Porter Girls Snr High,A,Western,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Berekum Presby Senior High,A,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Bishop Herman College,A,Volta,boys,day/boarding,yes,yes,no,no,yes,yes,yes
+Bolgatanga Senior High,A,Upper East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Bolga Girls Senior High,A,Upper East,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+"Holy Child School, Cape Coast",A,Central,girls,day/boarding,no,no,no,no,no,no,no
+Fijai Senior High,A,Western,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Ghana Senior High, Koforidua",A,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Ghana Senior High, Tamale",A,Northern,mixed,day/boarding,no,no,no,no,no,no,no
+Ghana Senior High/Tech,A,Western,boys,day/boarding,no,no,yes,no,no,yes,yes
+Krobo Girls Senior High,A,Eastern,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Koforidua Senior High/Tech,A,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Kumasi Senior High,A,Ashanti,boys,day/boarding,yes,yes,no,no,yes,yes,yes
+Lawra Senior High,A,Upper West,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+"Mawuli School, Ho",A,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Mfantsipim School,A,Central,boys,day/boarding,no,no,yes,no,yes,yes,yes
+Nandom Senior High,A,Upper West,boys,day/boarding,no,yes,no,no,no,yes,yes
+Navrongo Senior High,A,Upper East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Mfantsiman Girls Senior High,A,Central,girls,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Notre Dame Sem/ Senior High, Navrongo",A,Upper East,boys,day/boarding,no,no,no,no,no,yes,yes
+"Notre Dame Girls Senior High, Sunyani",A,Bono,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+"OLA Girls Senior High, Ho",A,Volta,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Ofori Panin Senior High,A,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Okuapeman Senior High,A,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"OLA Girls Senior High, Kenyasi",A,Ahafo,girls,day/boarding,no,yes,no,yes,no,yes,yes
+Opoku Ware Senior High,A,Ashanti,boys,day/boarding,no,yes,no,no,yes,yes,yes
+Our Lady of Providence Senior High,A,Bono,girls,day/boarding,no,yes,no,yes,no,yes,yes
+"Pope John Snr. High & Min. Sem., Koforidua",A,Eastern,boys,day/boarding,no,no,no,no,no,no,no
+Prempeh College,A,Ashanti,boys,day/boarding,no,yes,no,no,yes,yes,yes
+"Presby Boys Senior High, Legon",A,Greater Accra,boys,day/boarding,yes,yes,no,no,yes,yes,yes
+Sekondi College,A,Western,mixed,day/boarding,no,no,no,no,no,no,no
+Serwaa Kesse Girls Senior High,A,Ahafo,girls,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. John's Senior High, Sekondi",A,Western,boys,day/boarding,no,yes,no,no,yes,yes,yes
+"St. Francis Girls Senior High, Jirapa",A,Upper West,girls,day/boarding,no,yes,no,yes,no,yes,yes
+"St. Peter's Senior High, Nkwatia",A,Eastern,boys,day/boarding,yes,yes,no,no,no,yes,yes
+"St. Louis Senior High, Kumasi",A,Ashanti,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+"St. Thomas Aquinas Senior High, Cantoments",A,Greater Accra,boys,day,yes,yes,no,no,yes,yes,yes
+Sunyani Senior High,A,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"T. I. Ahmadiyya Senior High , Kumasi",A,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. Mary's Senior High, Korle Gonno",A,Greater Accra,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Tamale Senior High,A,Northern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Tema Senior High,A,Greater Accra,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"St. Rose's Senior High, Akwatia",A,Eastern,girls,day/boarding,no,no,no,yes,no,yes,yes
+Tamale Girls Senior High,A,Northern,girls,day/boarding,no,yes,no,yes,no,yes,yes
+"Wesley Girls Senior High, Cape Coast",A,Central,girls,day/boarding,no,no,no,no,no,no,no
+Yaa Asantewaa Girls Senior High,A,Ashanti,girls,day/boarding,yes,yes,no,yes,yes,yes,yes
+Acherensua Senior High,B,Ahafo,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Ahafoman Senior High/Tech,B,Ahafo,mixed,day/boarding,no,no,no,no,no,no,no
+Boakye Tromo Senior High/Tech,B,Ahafo,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Bomaa Comm. Senior High,B,Ahafo,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Derma Comm. Day School,B,Ahafo,mixed,day,no,no,no,no,no,no,no
+Gyamfi Kumanini Senior High/Tech,B,Ahafo,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Hwidiem Senior High,B,Ahafo,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Mim Senior High,B,Ahafo,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Samuel Otu Presby Senior High,B,Ahafo,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Yamfo Anglican Senior High School,B,Ahafo,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Aduman Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Adventist Senior High, Kumasi",B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Agona Senior High/Tech,B,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Akrofuom Senior High/Tech,B,Ashanti,mixed,day/boarding,yes,no,yes,yes,yes,yes,yes
+"Al-Azariya Islamic Snr. High, Kumasi",B,Ashanti,mixed,day,no,yes,no,yes,no,yes,yes
+"Anglican Senior High, Kumasi",B,Ashanti,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+"Armed Forces Senior High/Tech, Kumasi",B,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Asanteman Senior High,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Asare Bediako Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Bankoman Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Beposo Senior High,B,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Bompata Presby Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Bosome Senior High/Tech,B,Ashanti,mixed,day/boarding,no,yes,yes,yes,no,yes,yes
+Dwamena Akenten Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Fomena T.I. Ahmad Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Afua Kobi Ampem Girls' Senior High,B,Ashanti,girls,day/boarding,yes,yes,no,yes,yes,yes,yes
+Ghana Muslim Mission Senior High,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Islamic Senior High, Ampabame",B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Jachie Pramso Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Juaben Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+KNUST Senior High,B,Ashanti,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Kofiase Adventist Senior High/Tech,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,no
+Konadu Yiadom Catholic Senior High,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Konongo Odumase Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kumasi Academy,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Ahantaman Girls' Senior High,B,Western,girls,day/boarding,no,no,no,no,no,no,no
+Maabang Senior High/Tech,B,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Mpasatia Senior High/Tech,B,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+New Edubiase Senior High,B,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Nsutaman Cath. Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Nuru-Ameen Islamic Senior High, Asewase",B,Ashanti,mixed,day,no,yes,no,yes,yes,yes,yes
+Ofoase Kokoben Senior High,B,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Oppong Mem. Senior High,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Osei Kyeretwie Senior High,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Osei Tutu Senior High, Akropong",B,Ashanti,boys,day/boarding,yes,yes,no,no,yes,yes,yes
+Otumfuo Osei Tutu II College,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"S.D.A. Senior High, Agona",B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"S.D.A. Senior High, Bekwai",B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Sakafia Islamic Senior High,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Sekyedumase Senior High/Tech,B,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"St. Hubert Sem/Senior High, Kumasi",B,Ashanti,boys,day/boarding,no,yes,no,no,no,yes,yes
+"St. Jerome Senior High, Abofour",B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. Joseph Senior High/Tech, Ahwiren",B,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"St. Michael's Senior High, Ahenkro",B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,no
+E.P.C. Mawuko Girls Senior High,B,Volta,girls,day/boarding,yes,yes,no,yes,yes,yes,yes
+Tawheed Senior High,B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Tepa Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Toase Senior High,B,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Tweneboa Kodua Senior High,B,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Wesley Senior High, Konongo",B,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Kwabre Senior High,B,Bono East,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+New Longoro Comm. School (Dega),B,Bono East,mixed,day,yes,yes,no,yes,yes,yes,yes
+Nkoranza Senior High/Tech,B,Bono East,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Osei Bonsu Senior High,B,Bono East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Islamic Girls Senior High,Suhum",B,Eastern,girls,day/boarding,no,yes,no,yes,yes,yes,no
+Prang Senior High,B,Bono East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. Francis Seminary/Senior High, Buoyem",B,Bono East,boys,day/boarding,yes,yes,no,yes,yes,yes,yes
+Techiman Senior High,B,Bono East,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Tuobodom Senior High/Tech,B,Bono East,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Yeboah Asuamah Senior High,B,Bono East,mixed,day,no,yes,no,yes,no,yes,no
+Badu Senior High/Tech,B,Bono,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Bandaman Senior High,B,Bono,mixed,day/boarding,no,yes,yes,no,no,yes,no
+Berekum Senior High,B,Bono,mixed,day/boarding,no,no,no,no,no,no,no
+Diamono Senior High Sch,B,Bono,mixed,day,no,yes,no,no,no,yes,yes
+Dormaa Senior High,B,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Drobo Senior High,B,Bono,mixed,day/boarding,no,no,no,no,no,no,no
+Goka Senior High/Tech,B,Bono,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Istiquaama Snr. High,B,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Jinijini Senior High,B,Bono,mixed,day/boarding,no,no,no,no,no,no,no
+Mansen Senior High Sch,B,Bono,mixed,day/boarding,yes,yes,no,no,yes,yes,no
+Menji Senior High,B,Bono,mixed,day,yes,yes,no,no,yes,yes,no
+Nafana Senior High,B,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Nkoranman Senior High,B,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Nkrankwanta Comm Senior High,B,Bono,mixed,day/boarding,yes,yes,yes,no,no,yes,yes
+Nsawkaw State Senior High,B,Bono,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+Odomaseman Senior High,B,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kumasi Girls Senior High,B,Ashanti,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+"S.D.A Senior High, Sunyani",B,Bono,mixed,day,no,yes,no,no,no,yes,no
+"Sacred Heart Senior High, Nsoatre",B,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kumasi Wesley Girls High Sch,B,Ashanti,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Sumaman Senior High,B,Bono,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+Twene Amanfo Senior High/Tech,B,Bono,mixed,day,no,yes,yes,yes,yes,yes,yes
+Wamanafo Senior High/Tech,B,Bono,mixed,day/boarding,yes,yes,yes,no,no,yes,no
+Wenchi Meth. Senior High,B,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Academy of Christ the King, Cape Coast",B,Central,mixed,day,no,no,no,no,no,no,no
+Adankwaman Senior High,B,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Aggrey Mem. A.M.E.Zion Snr. High,B,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Diaso Senior High,B,Central,mixed,day/boarding,yes,yes,no,yes,no,yes,no
+Edinaman Senior High,B,Central,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Ekumfi T. I. Ahmadiiyya Snr. High,B,Central,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Ghana National College,B,Central,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Methodist High School, Saltpond",B,Central,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Methodist Girls Senior High, Mamfe",B,Eastern,girls,day/boarding,yes,yes,no,yes,yes,yes,yes
+Mozano Senior High,B,Central,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Nsaba Presby Senior High,B,Central,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+Nyakrom Senior High Tech,B,Central,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Siddiq Senior High Sch,B,Central,mixed,day,no,yes,no,yes,yes,yes,yes
+Swedru Senior High,B,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Twifo Hemang Senior High/Tech,B,Central,mixed,day/boarding,no,yes,yes,yes,no,yes,no
+Twifo Praso Senior High,B,Central,mixed,day/boarding,no,no,no,no,no,no,no
+University Practice Senior High,B,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Winneba Senior High,B,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Abetifi Presby Senior High,B,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Abuakwa State College,B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Achiase Senior High,B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Adonten Senior High,B,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Akwamuman Senior High,B,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Aperade Senior High/Tech,B,Eastern,mixed,day,no,yes,no,yes,no,yes,no
+Asamankese Senior High,B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Attafuah Senior High/Tech,B,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Benkum Senior High,B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kade Senior High/Tech,B,Eastern,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Kibi Senior High/Tech,B,Eastern,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Kwabeng Anglican Senior High/Tech,B,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Kwahu Ridge Senior High,B,Eastern,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Kwahu Tafo Senior High,B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Manya Krobo Senior High,B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Mpraeso Senior High,B,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Our Lady of Mount Carmel Girls Senior High, Techiman",B,Bono East,girls,day/boarding,no,no,no,no,no,no,no
+New Juaben Senior High/Com,B,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Nifa Senior High,B,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Nkawkaw Senior High,B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Nkwatia Presby Senior High/Com,B,Eastern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+"Presby Senior High, Begoro",B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"S.D.A Senior High, Koforidua",B,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,no
+"Saviour Senior High, Osiem",B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. Dominic's Senior High/Tech, Pepease",B,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"St. Francis Senior High/Tech, Akim Oda",B,Eastern,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+"St. Martin's Senior High, Nsawam",B,Eastern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+"St. Michael's Senior High, Akoase (Nkawkaw)",B,Eastern,mixed,day,yes,yes,no,yes,yes,yes,no
+Suhum Senior High/Tech,B,Eastern,mixed,day/boarding,no,yes,yes,no,yes,yes,yes
+"W.B.M. Zion Senior High, Old Tafo",B,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Accra Senior High,B,Greater Accra,mixed,day,no,yes,yes,yes,yes,yes,yes
+Ada Senior High,B,Greater Accra,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Chemu Senior High/Tech,B,Greater Accra,mixed,day,no,yes,yes,yes,yes,yes,yes
+Ghanata Senior High,B,Greater Accra,mixed,day/boarding,no,no,no,no,no,no,no
+Labone Senior High,B,Greater Accra,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Ningo Senior High,B,Greater Accra,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Nungua Senior High,B,Greater Accra,mixed,day/boarding,no,no,no,no,no,no,no
+Odorgonno Senior High,B,Greater Accra,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Our Lady of Mercy Senior High,B,Greater Accra,mixed,day,no,yes,no,yes,yes,yes,yes
+Prampram Senior High,B,Greater Accra,mixed,day/boarding,no,no,no,no,no,no,no
+St. John's Grammar Senior High,B,Greater Accra,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+St. Margaret Mary Snr.High/Tech,B,Greater Accra,mixed,day,no,yes,yes,yes,yes,yes,yes
+Wesley Grammar Senior High,B,Greater Accra,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+West Africa Senior High,B,Greater Accra,mixed,day,yes,yes,no,yes,yes,yes,yes
+Serwaa Nyarko Girls' Snr. High,B,Ashanti,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Kalpohin Senior High,B,Northern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Yendi Senior High,B,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Baglo Ridge Senior High/Tech,B,Oti,mixed,day,yes,yes,yes,yes,yes,yes,no
+Bueman Senior High,B,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Okadjakrom Senior High/Tech,B,Oti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Bawku Senior High,B,Upper East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Zebilla Senior High/Tech,B,Upper East,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Kanton Senior High,B,Upper West,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Lassie-Tuolu Senior High,B,Upper West,mixed,day/boarding,no,no,no,yes,no,yes,yes
+"Queen of Peace Senior High, Nadowli",B,Upper West,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+"T. I. Ahmadiyya Senior High, Wa",B,Upper West,mixed,day/boarding,no,no,no,no,no,no,no
+Wa Senior High,B,Upper West,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Abutia Senior High/Tchnical,B,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Keta Senior High/Tech,B,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Kpando Senior High,B,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Mafi-Kumasi Senior High/Tech,B,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Peki Senior High,B,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Sogakope Senior High,B,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. Monica's Senior High, Mampong",B,Ashanti,girls,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. Mary's Sem.& Senior High, Lolobi",B,Volta,boys,day/boarding,no,yes,no,no,no,yes,yes
+Tanyigbe Senior High,B,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Tongor Senior High Tech,B,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Adiembra Senior High,B,Western,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Amenfiman Senior High,B,Western,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Benso Senior High/Tech,B,Western,mixed,day/boarding,yes,yes,yes,yes,no,yes,no
+Bompeh Senior High./Tech,B,Western,mixed,day,no,no,no,no,no,no,no
+Daboase Senior High/Tech,B,Western,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Esiama Senior High/Tech,B,Western,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Half Assini Senior High,B,Western,mixed,day/boarding,no,no,no,no,no,no,no
+Nsein Senior High,B,Western,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"T. I. Ahmadiyya Girl's Senior High, Asokore",B,Ashanti,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Shama Senior High,B,Western,mixed,day/boarding,no,no,no,no,no,no,no
+"St. Mary's Boys' Senior High, Apowa",B,Western,boys,day/boarding,yes,yes,no,no,yes,yes,yes
+Tarkwa Senior High,B,Western,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Akontombra Senior High,B,Western North,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Asawinso Senior High,B,Western North,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Bia Senior High/Tech,B,Western North,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Bodi Senior High,B,Western North,mixed,day,yes,yes,no,yes,no,yes,yes
+Dadieso Senior High,B,Western North,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Sefwi Bekwai Senior High,B,Western North,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Sefwi-Wiawso Senior High,B,Western North,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Sefwi-Wiawso Senior High/Tech,B,Western North,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"St. Joseph Senior High, SefwiW iawso",B,Western North,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Bechem Presby Senior High,C,Ahafo,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kukuom Agric Senior High,C,Ahafo,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Sankore Senior High,C,Ahafo,mixed,day/boarding,no,yes,no,no,yes,yes,no
+Achinakrom Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Adanwomase Senior High,C,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Adobewora Comm. Senior High,C,Ashanti,mixed,day,yes,yes,no,yes,yes,yes,yes
+Adu Gyamfi Senior High,C,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Agric Nzema Senior High, Kumasi",C,Ashanti,mixed,day,yes,yes,no,yes,yes,yes,yes
+Akumadan Senior High,C,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Akwesi Awobaa Senior High,C,Ashanti,mixed,day,no,yes,yes,no,no,yes,no
+Amaniampong Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Antoa Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Asuoso Comm. Senior High,C,Ashanti,mixed,day,yes,yes,no,no,no,yes,yes
+Atwima Kwanwoma Snr High/Tech,C,Ashanti,mixed,day/boarding,no,yes,yes,yes,yes,yes,no
+"Adventist Girls Senior High, Ntonso",C,Ashanti,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Banka Comm. Senior High,C,Ashanti,mixed,day,no,yes,no,yes,no,yes,yes
+Barekese Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Bodomase Senior High/Tech,C,Ashanti,mixed,day,no,yes,yes,no,no,yes,no
+Bodwesango Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Bonwire Senior High/Tech,C,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Bosomtwe Oyoko Comm. Senior High,C,Ashanti,mixed,day,yes,yes,no,yes,no,yes,yes
+Dadease Agric Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Effiduase Senior High/Com,C,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Effiduase Senior High/Tech,C,Ashanti,mixed,day,no,no,yes,yes,yes,yes,no
+Ejisu Senior High/Tech,C,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Ejisuman Senior High,C,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Ejuraman Anglican Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Esaase Bontefufuo Snr. High/Tech,C,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Gyaama Pensan Senior High/Tech,C,Ashanti,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Jacobu Senior High/Tech,C,Ashanti,mixed,day/boarding,yes,no,yes,yes,yes,yes,yes
+Juaso Senior High/Tech,C,Ashanti,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Kofi Adjei Senior High/Tech,C,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Kumasi Senior High/Tech,C,Ashanti,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Kwanwoma Senior High/Tech,C,Ashanti,mixed,day,no,yes,yes,no,yes,yes,no
+Mankranso Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Manso-Adubia Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Mansoman Senior High,C,Ashanti,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+Namong Senior High/Tech,C,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+Nkawie Senior High/Tech,C,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Nkenkansu Community Senior High,C,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,no
+Nyinahin Cath. Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Obuasi Senior High/Tech,C,Ashanti,mixed,day/boarding,no,no,no,no,no,no,no
+Ofoase Senior High/Tech,C,Ashanti,mixed,day/boarding,yes,no,yes,yes,no,yes,yes
+Okomfo Anokye Senior High,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Pentecost Senior High, Kumasi",C,Ashanti,mixed,day,no,yes,no,yes,yes,yes,no
+"Presby Senior High/Tech, Kwamang",C,Ashanti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+Simms Senior High/Com,C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+St. George's Senior High Tech,C,Ashanti,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+"St. Joseph Sem/Senior High, Mampong",C,Ashanti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+St. Sebastian Cath. Senior High,C,Ashanti,mixed,day,yes,no,no,no,no,yes,no
+Tijjaniya Senior High,C,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,no
+Tweapease Senior High School,C,Ashanti,mixed,day,no,yes,no,no,no,yes,no
+"Uthmaniya Senior High, Tafo",C,Ashanti,mixed,day,no,yes,no,yes,no,yes,yes
+"Wesley High School, Bekwai",C,Ashanti,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Abeaseman Comm. Day Senior High,C,Bono East,mixed,day,yes,yes,no,yes,yes,yes,yes
+Atebubu Senior High,C,Bono East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Busunya Senior High,C,Bono East,mixed,day/boarding,no,no,no,no,no,no,no
+Gyarko Comm. Day Senior High,C,Bono East,mixed,day,yes,yes,no,yes,yes,yes,yes
+Kajaji Senior High,C,Bono East,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Kesse Basahyia Senior High,C,Bono East,mixed,day,no,no,no,no,no,no,no
+Kintampo Senior High,C,Bono East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Krobo Comm.Senior High,C,Bono East,mixed,day,yes,yes,no,yes,no,yes,yes
+Kwame Danso Senior High/Tech,C,Bono East,mixed,day/boarding,no,no,no,no,no,no,no
+Kwarteng Ankomah Senior High,C,Bono East,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Yeji Senior High/Tech,C,Bono East,mixed,day/boarding,no,yes,yes,yes,no,yes,yes
+Chiraa Senior High,C,Bono,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Duadaso No. 1 Senior High/Tech,C,Bono,mixed,day,no,yes,yes,no,no,yes,no
+Koase Senior High/Tech,C,Bono,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"Methodist Senior High/Tech., Biadan",C,Bono,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Nkyeraa Senior High Sch,C,Bono,mixed,day,yes,yes,no,yes,no,yes,no
+"Salvation Army Senior High, Aboabo Dormaa",C,Bono,mixed,day/boarding,no,yes,no,yes,no,yes,no
+"St. Augustine Senior High, Nsapor- Berekum",C,Bono,mixed,day,no,yes,no,no,no,yes,no
+Abakrampa Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Abeadze State College,C,Central,mixed,day/boarding,no,yes,no,no,yes,yes,no
+Aburaman Senior High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Agona Fankobaa Senior High,C,Central,mixed,day,yes,yes,no,yes,yes,yes,yes
+Agona Namonwora Comm.Senior High,C,Central,mixed,day,yes,yes,no,yes,no,yes,yes
+Assin Manso Senior High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Assin North Senior High/Tech,C,Central,mixed,day/boarding,no,no,no,no,no,no,no
+Assin Nsuta Agric. Senior High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Assin State College,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Axim Girls Senior High,C,Western,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+"College of Music Senior, Mozano",C,Central,mixed,day/boarding,no,yes,no,yes,no,yes,no
+Dunkwa Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Effutu Senior High/Tech,C,Central,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Eguafo-Abrem Senior High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Enyan Denkyira Senior High,C,Central,mixed,day/boarding,yes,yes,yes,yes,no,yes,no
+Enyan Maim Comm. Day School,C,Central,mixed,day,yes,yes,no,yes,no,yes,yes
+Fettehman Senior High,C,Central,mixed,day,no,yes,no,yes,yes,yes,yes
+Gomoa Gyaman Senior High,C,Central,mixed,day,yes,yes,no,yes,yes,yes,no
+Gomoa Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Gyaase Community Senior High,C,Central,mixed,day,yes,yes,no,yes,yes,yes,yes
+J.E.A. Mills Senior High,C,Central,mixed,day,yes,yes,no,yes,yes,yes,yes
+Jukwa Senior High,C,Central,mixed,day/boarding,no,no,no,no,no,no,no
+Komenda Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Kwanyako Senior High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kwegyir Aggrey Senior High,C,Central,mixed,day/boarding,no,no,no,no,no,no,no
+Mando Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Mankessim Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Moree Comm. Senior High,C,Central,mixed,day,no,no,no,no,no,no,no
+Diaspora Girls' Senior High,C,Eastern,girls,day/boarding,no,yes,no,yes,yes,yes,no
+Nyankumase Ahenkro Snr. High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Obiri Yeboah Senior High/Technical,C,Central,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Obrachire Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Odoben Senior High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Odupong Comm. Day School,C,Central,mixed,day,yes,yes,no,yes,yes,yes,yes
+Oguaa Senior High/Tech,C,Central,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Gambaga Girls Senior High,C,North East,girls,day/boarding,no,yes,no,yes,no,yes,no
+Potsin T.I. Ahm. Senior High,C,Central,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Senya Senior High,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Swedru Sch. Of Business,C,Central,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Adeiso Presby Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Adjena Senior High/Tech,C,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+Akim Asafo Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Akim Swedru Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Akokoaso Senior High/Tech,C,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Akro Senior High/Tech,C,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+Akroso Senior High/Tech,C,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Apeguso Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Asesewa Senior High School,C,Eastern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Asuom Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Atweaman Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Ayirebi Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Bepong Senior High School,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Boso Senior High Technical,C,Eastern,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Donkorkrom Agric Senior High,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Fodoa Comm. Senior High,C,Eastern,mixed,day,yes,yes,no,yes,yes,yes,yes
+H'Mount Sinai Senior High,C,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Klo-Agogo Senior High,C,Eastern,mixed,day,yes,yes,no,yes,yes,yes,no
+Kraboa-Coaltar Presby Snr. High/Tech,C,Eastern,mixed,day/boarding,yes,no,yes,yes,yes,yes,yes
+Kwaobaah Nyanoa Comm. Senior High,C,Eastern,mixed,day,no,no,no,no,no,no,no
+Maame Krobo Comm. Senior High,C,Eastern,mixed,day,yes,yes,no,no,no,yes,yes
+Mampong/Akw Snr. High/Tech for the Deaf,C,Eastern,mixed,day/boarding,no,no,yes,yes,yes,yes,no
+Mangoase Senior High,C,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Mem-Chemfre Comm. Senior High,C,Eastern,mixed,day,yes,no,yes,yes,no,yes,yes
+New Abirem/Afosu Senior High,C,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+New Nsutam Senior High/Tech,C,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Nsawam Senior High,C,Eastern,mixed,day,yes,yes,no,yes,yes,yes,no
+Osino Presby Senior High/Tech,C,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"Presby Senior High/Tech, Larteh",C,Eastern,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+"Presby Senior High, Mampong Akwapim",C,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+"Presby Senior High, Suhum",C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Presby Senior High/Tech, Aburi",C,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"Presby Senior High/Tech, Adukrom",C,Eastern,mixed,day/boarding,yes,no,yes,yes,yes,yes,yes
+S.D.A. Senior High. Akim Sekyere,C,Eastern,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+"Salvation Army Senior High, Akim Wenchi",C,Eastern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Jamiat Al-Hidaya Islamic Girls,C,Upper West,girls,day/boarding,no,yes,no,yes,no,yes,no
+St. Fidelis Senior High/Tech,C,Eastern,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+"St. Paul's Senior High, Asakraka Kwahu",C,Eastern,mixed,day/boarding,no,yes,no,yes,yes,yes,no
+"St. Stephen's Presby Snr. High/Tech, Asiakwa",C,Eastern,mixed,day/boarding,no,yes,yes,yes,yes,yes,no
+St. Thomas Senior High/Tech,C,Eastern,mixed,day/boarding,yes,no,yes,yes,yes,yes,yes
+Tarkrosi Comm. Senior High,C,Eastern,mixed,day,yes,yes,no,no,no,yes,yes
+Yilo Krobo Senior High/Com,C,Eastern,mixed,day/boarding,no,no,no,no,no,no,no
+Ada Senior High/Tech,C,Greater Accra,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Adjen Kotoku Senior High,C,Greater Accra,mixed,day,no,yes,no,yes,yes,yes,no
+"Forces Senior High/Tech, Burma Camp",C,Greater Accra,mixed,day/boarding,no,no,yes,yes,yes,yes,yes
+Frafraha Comm. Senior High,C,Greater Accra,mixed,day,no,yes,no,yes,yes,yes,yes
+Holy Trinity Senior High,C,Greater Accra,mixed,day,no,no,no,yes,yes,yes,yes
+Kaneshie Senior High/Tech,C,Greater Accra,mixed,day,no,no,yes,yes,yes,yes,yes
+Kinbu Senior High/Tech,C,Greater Accra,mixed,day,no,yes,yes,yes,yes,yes,yes
+Kpone Comm. Senior High,C,Greater Accra,mixed,day,yes,yes,no,yes,yes,yes,yes
+Kwabenya Comm. Senior High,C,Greater Accra,mixed,day,no,yes,yes,yes,yes,yes,yes
+La Presby Senior High,C,Greater Accra,mixed,day,no,yes,no,yes,yes,yes,yes
+Ngleshie Amanfro Senior High,C,Greater Accra,mixed,day,yes,yes,no,yes,yes,yes,yes
+O'Reilly Senior High,C,Greater Accra,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Osudoku Senior High/Tech,C,Greater Accra,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+"Presby Senior High, Osu",C,Greater Accra,mixed,day,no,yes,no,yes,yes,yes,yes
+"Presby Senior High, Tema",C,Greater Accra,mixed,day,no,no,no,no,no,no,no
+"Presby Senior High, Teshie",C,Greater Accra,mixed,day,no,yes,no,yes,yes,yes,yes
+Tema Manhean Senior High/Tech,C,Greater Accra,mixed,day,yes,yes,yes,yes,yes,yes,yes
+Tema Meth. Day Senior High,C,Greater Accra,mixed,day,no,no,no,no,no,no,no
+Bunkpurugu Senior High/Tech,C,North East,mixed,day/boarding,yes,no,yes,yes,no,yes,no
+Chereponi Senior High/Tech,C,North East,mixed,day/boarding,yes,no,no,yes,no,yes,yes
+Janga Senior High/Tech,C,North East,mixed,day,no,no,no,no,no,no,no
+Nakpanduri Senior High,C,North East,mixed,day/boarding,no,yes,no,yes,no,yes,no
+Nalerigu Senior High,C,North East,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Walewale Senior High,C,North East,mixed,day/boarding,no,yes,yes,yes,yes,yes,yes
+Wulugu Senior High,C,North East,mixed,day/boarding,yes,no,no,yes,no,yes,no
+Yagaba Senior High School,C,North East,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Anbariya Senior High Sch,C,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Bimbilla Senior High,C,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+"Business Senior High, Tamale",C,Northern,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+Dagbon State Senior High/Tech,C,Northern,mixed,day/boarding,yes,no,yes,yes,yes,yes,no
+E. P. Agric Senior High/Tech,C,Northern,mixed,day,yes,no,no,yes,no,yes,no
+Gushegu Senior High,C,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+"Islamic Science Senior High, Tamale",C,Northern,mixed,day/boarding,yes,no,no,yes,no,no,yes
+Karaga Senior High,C,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Kpandai Senior High,C,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Kumbungu Senior High,C,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Northern School of Business,C,Northern,mixed,day/boarding,no,no,no,no,no,no,no
+Pong-Tamale Senior High,C,Northern,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"Presby Senior High, Tamale",C,Northern,mixed,day,no,yes,no,yes,no,yes,no
+Vitting Senior High/Tech,C,Northern,mixed,day/boarding,yes,no,yes,yes,yes,yes,no
+Wapuli Comm. Senior High,C,Northern,mixed,day,no,no,no,yes,no,yes,yes
+Wulensi Senior High,C,Northern,mixed,day/boarding,yes,yes,no,no,no,yes,yes
+Zabzugu Senior High,C,Northern,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Ahamansu Islamic Senior High School,C,Oti,mixed,day,yes,yes,no,yes,yes,yes,no
+Asukawkaw Senior High,C,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Bowiri Comm. Day School,C,Oti,mixed,day,yes,yes,yes,yes,yes,yes,yes
+Dodi-Papase Senior High/Tech,C,Oti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Kadjebi-Asato Senior High,C,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kete Krachi Senior High/Tech,C,Oti,mixed,day,yes,yes,yes,no,no,yes,no
+Kpassa Senior High/Tech,C,Oti,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Krachi Senior High,C,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kyabobo Girls Senior High,C,Oti,girls,day,no,no,no,no,no,no,no
+Nchumuruman Comm. Day Senior High,C,Oti,mixed,day,yes,yes,no,yes,no,yes,no
+Nkonya Senior High,C,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Nkwanta Comm.Senior High,C,Oti,mixed,day,no,no,no,no,no,no,no
+Nkwanta Senior High,C,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Ntruboman Senior High,C,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Oti Senior High/Tech Sch,C,Oti,mixed,day/boarding,no,no,no,no,no,no,no
+Tapaman Senior High/Tech,C,Oti,mixed,day,no,yes,yes,no,yes,yes,no
+Worawora Senior High,C,Oti,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Yabram Comm. Day School,C,Oti,mixed,day,yes,yes,no,yes,yes,yes,yes
+Bamboi Comm. Senior High,C,Savannah,mixed,day,yes,yes,no,yes,no,yes,no
+Bole Senior High,C,Savannah,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Buipe Senior High,C,Savannah,mixed,day/boarding,yes,yes,no,yes,no,yes,no
+Daboya Comm. Day School,C,Savannah,mixed,day,yes,yes,no,yes,no,yes,yes
+Damongo Senior High,C,Savannah,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Ndewura Jakpa Senior High/Tech,C,Savannah,mixed,day/boarding,yes,no,yes,yes,yes,yes,no
+Salaga Senior High,C,Savannah,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Salaga T.I. Ahmad Senior High,C,Savannah,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Sawla Senior High Sch,C,Savannah,mixed,day/boarding,no,yes,no,yes,no,yes,no
+St. Anthony of Padua Senior High/Tech,C,Savannah,mixed,day,no,yes,yes,yes,no,yes,no
+Tuna Senior High/Tech,C,Savannah,mixed,day/boarding,yes,yes,yes,yes,no,yes,no
+Awe Senior High/Tech,C,Upper East,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Bawku Senior High/Tech,C,Upper East,mixed,day/boarding,no,no,no,no,no,no,no
+Binduri Comm. Senior High,C,Upper East,mixed,day,yes,yes,no,no,no,yes,yes
+Bolga Sherigu Comm. Senior High,C,Upper East,mixed,day,yes,yes,no,no,no,yes,yes
+Garu Comm. Day Senior High,C,Upper East,mixed,day,yes,yes,no,no,no,yes,yes
+Gowrie Senior High/Tech,C,Upper East,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Kanjaga Comm. Senior High,C,Upper East,mixed,day,no,yes,no,yes,no,yes,yes
+Kongo Senior High,C,Upper East,mixed,day/boarding,yes,yes,no,yes,no,yes,no
+Kusanaba Senior High,C,Upper East,mixed,day/boarding,yes,yes,no,yes,no,yes,no
+Mirigu Community Day Senior High,C,Upper East,mixed,day,no,yes,no,yes,no,yes,no
+Nabango Senior High,C,Upper East,mixed,day,no,yes,yes,no,no,yes,no
+O.L.L. Girls Senior High,C,Upper East,girls,day/boarding,yes,yes,no,yes,no,yes,yes
+Paga Senior High,C,Upper East,mixed,day,no,yes,no,yes,yes,yes,no
+Sandema Senior High,C,Upper East,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Sandema Senior High/Tech,C,Upper East,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Sirigu Senior High,C,Upper East,mixed,day/boarding,yes,yes,no,yes,no,yes,no
+St. John's Integrated Snr. High/Tech,C,Upper East,mixed,day/boarding,no,no,no,no,no,no,no
+Tempane Senior High,C,Upper East,mixed,day/boarding,yes,yes,no,no,yes,yes,no
+Zamse Senior High/Tech,C,Upper East,mixed,day/boarding,no,no,yes,yes,yes,yes,yes
+Zorkor Senior High,C,Upper East,mixed,day/boarding,no,no,no,no,no,no,no
+Zuarungu Senior High,C,Upper East,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Birifoh Senior High Sch,C,Upper West,mixed,day,no,yes,no,no,no,yes,no
+Daffiamah Senior High,C,Upper West,mixed,day/boarding,no,no,no,no,no,no,no
+Dr. Hila Liman Senior High School,C,Upper West,mixed,day/boarding,no,yes,no,no,no,yes,yes
+Eremon Senior High/Tech,C,Upper West,mixed,day/boarding,yes,no,yes,yes,no,no,no
+Funsi Senior High School,C,Upper West,mixed,day/boarding,no,yes,no,no,no,yes,no
+Holy Family Senior High,C,Upper West,mixed,day/boarding,no,yes,no,yes,no,yes,no
+"Islamic Senior High, Wa Queens Girls' Senior High, Sefwi",C,Upper West,mixed,day/boarding,no,yes,no,yes,no,yes,yes
+Awhiaso,C,Western North,girls,day/boarding,no,no,no,no,no,no,no
+Jirapa Senior High,C,Upper West,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Kaleo Senior High/Tech,C,Upper West,mixed,day/boarding,yes,no,yes,yes,no,yes,yes
+Ko Senior High,C,Upper West,mixed,day/boarding,no,yes,no,yes,no,yes,no
+Lambussie Comm. Senior High,C,Upper West,mixed,day,yes,yes,no,no,no,yes,yes
+Loggu Comm. Day School,C,Upper West,mixed,day,yes,yes,no,yes,no,yes,no
+Northern Star Senior High,C,Upper West,mixed,day,no,yes,no,yes,no,yes,no
+Piina Senior High,C,Upper West,mixed,day/boarding,yes,yes,no,yes,no,yes,no
+"St. Augustine Senior High/Tech, Saan Charikpong",C,Upper West,mixed,day,no,no,yes,yes,no,yes,no
+Takpo Senior High Sch,C,Upper West,mixed,day,no,no,no,no,no,no,no
+Tumu Senior High/Tech,C,Upper West,mixed,day/boarding,yes,yes,yes,yes,no,yes,no
+Ullo Senior High,C,Upper West,mixed,day/boarding,yes,yes,no,yes,no,yes,no
+Afadjato Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,no,yes,no
+Afife Senior High Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+Agotime Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Akatsi Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Akome Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Akpafu Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Alavanyo Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Anfoega Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Anlo Afiadenyigba Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Anlo Awomefia Senior High,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Atiavi Senior High/Tech,C,Volta,mixed,day,yes,yes,yes,yes,no,yes,yes
+Avatime Senior High,C,Volta,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Ave Senior High,C,Volta,mixed,day/boarding,no,no,no,no,no,no,no
+Avenor Senior High,C,Volta,mixed,day,yes,yes,no,no,no,yes,yes
+Aveyime Battor Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Battor Senior High,C,Volta,mixed,day/boarding,no,no,no,no,no,no,no
+Dabala Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Dofor Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Dzodze Penyi Senior High,C,Volta,mixed,day/boarding,no,no,no,no,no,no,no
+Dzolo Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+E. P. Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Jim Bourton Mem Agric. Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,no
+Keta Business Senior High,C,Volta,mixed,day/boarding,no,yes,no,yes,yes,yes,yes
+Klikor Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+St. Catherine Girls Senior High,C,Volta,girls,day/boarding,no,yes,no,yes,yes,yes,yes
+Kpedze Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Kpeve Senior High,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+Leklebi Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Likpe Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Mepe St. Kizito Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Peki Senior High/Technical,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Shia Senior High Tech,C,Volta,mixed,day,yes,yes,yes,yes,yes,yes,yes
+Sokode Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Some Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+"St. Paul's Senior High, Denu",C,Volta,boys,day/boarding,no,no,no,no,no,no,no
+Taviefe Comm. Senior High,C,Volta,mixed,day/boarding,no,yes,no,yes,yes,yes,no
+Three Town Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Ve Comm. Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Volo Comm. Senior High,C,Volta,mixed,day,yes,yes,no,yes,yes,yes,yes
+Volta Senior High School,C,Volta,mixed,day,no,yes,no,yes,yes,yes,no
+Weta Senior High/Tech,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,no
+Wovenu Senior High Technical,C,Volta,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Zion Senior High,C,Volta,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Ziope Senior High Sch,C,Volta,mixed,day,yes,yes,no,yes,yes,yes,no
+Annor Adjaye Senior High,C,Western,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Asankrangwa Senior High,C,Western,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Asankrangwa Senior High/Tech,C,Western,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Baidoo Bonso Senior High/Tech,C,Western,mixed,day/boarding,yes,yes,yes,yes,yes,yes,yes
+Bonzo-Kaku Senior High,C,Western,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Diabene Senior High/Tech,C,Western,mixed,day/boarding,no,no,no,no,no,no,no
+Fiaseman Senior High,C,Western,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Gwiraman Comm.Senior High,C,Western,mixed,day,yes,yes,no,yes,yes,yes,yes
+Huni Valley Senior High,C,Western,mixed,day/boarding,no,no,no,no,no,no,no
+"Methodist Senior High, Sekondi",C,Western,mixed,day,no,yes,no,yes,no,yes,yes
+Mpohor Senior High,C,Western,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Nkroful Agric. Senior High,C,Western,mixed,day/boarding,no,no,no,no,no,no,no
+Prestea Senior High/Tech,C,Western,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Sankor Comm. Day School,C,Western,mixed,day,yes,yes,no,yes,no,yes,no
+"St. Augustine's Senior High, Bogoso",C,Western,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Takoradi Senior High,C,Western,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Uthman Bin Afam SHS,C,Western,mixed,day/boarding,yes,yes,no,yes,no,yes,yes
+Adjoafua Comm. Senior High,C,Western North,mixed,day,yes,yes,no,no,no,yes,yes
+Bibiani Senior High/Tech,C,Western North,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Chirano Comm. Day School,C,Western North,mixed,day,yes,yes,no,no,no,yes,yes
+Juaboso Senior High,C,Western North,mixed,day/boarding,yes,yes,no,yes,yes,yes,yes
+Manso-Amenfi Comm. Day School,C,Western North,mixed,day,yes,yes,no,yes,yes,yes,yes
+Nana Brentu Senior High/Tech,C,Western North,mixed,day/boarding,yes,yes,yes,yes,no,yes,yes
+Nsawora Edumafa Comm. Senior High School,C,Western North,mixed,day,yes,yes,no,yes,yes,yes,yes

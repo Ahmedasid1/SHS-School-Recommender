@@ -17,6 +17,10 @@ does not record when the source file was obtained. The data was extracted with
 and invalid category, gender, residency, or programme values. These checks validate the CSV's
 structure and consistency, not the source's accuracy.
 
+The extraction and cleaning is also documented step by step in
+`notebooks/clean_schools_pdf.ipynb`, which reads `data/raw/ges_shs_list.pdf` and writes
+`data/schools_notebook.csv` (it needs `pdfplumber`, plus `jupyter` to run it).
+
 The current heuristic uses maximum aggregates of 10 for Category A, 20 for Category B, and 54
 for Category C. A candidate is estimated to meet a category cutoff when their aggregate is at or
 below that value. These values are configurable in `app/core/calculator.py`; they should not be
