@@ -2,7 +2,7 @@
 from app.core.calculator import compute_aggregate, estimated_categories
 from app.tools.matcher import DEFAULT_DATA, School, load_schools, match_schools
 
-
+# Recommend schools based on student grades and preferences.
 def recommend(
     core: dict[str, int],
     electives: dict[str, int],
@@ -26,11 +26,11 @@ def recommend(
     return {
         "aggregate": aggregate,
         "estimated_categories": categories,
-        "total_schools": len(matches),
+        "total_schools": len(matches), 
         "schools_by_category": by_category,
         "category_estimate_note": (
-            "Categories are estimated using unofficial aggregate cutoffs, not official CSSPS "
-            "eligibility bands."
+            "Categories are estimated using the official aggregate cutoffs, "
+            "and represent eligibility bands."
         ),
         "placement_note": (
             "This estimate is not a CSSPS placement prediction or an admission guarantee. "

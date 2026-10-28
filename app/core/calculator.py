@@ -13,7 +13,7 @@ def _validate(subject: str, grade: int) -> None:
     if not isinstance(grade, int) or not MIN_GRADE <= grade <= MAX_GRADE:
         raise ValueError(f"Grade for '{subject}' must be an integer {MIN_GRADE}-{MAX_GRADE}, got {grade!r}")
 
-
+# Compute the BECE aggregate based on core and elective subjects.
 def compute_aggregate(core: dict[str, int], electives: dict[str, int]) -> int:
     """Sum of the 4 core subject grades and the best 2 elective grades (lower is better)."""
     missing = [s for s in CORE_SUBJECTS if s not in core]

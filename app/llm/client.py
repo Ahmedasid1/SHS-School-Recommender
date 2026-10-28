@@ -1,3 +1,5 @@
+# Ollama client for interacting with the LLM server via HTTP
+
 """Thin Ollama HTTP client for chat (with tools) and embeddings."""
 import logging
 
