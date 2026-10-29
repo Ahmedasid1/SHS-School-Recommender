@@ -1,3 +1,4 @@
+# Build the vector index for the RAG system using document and school chunks.
 """Build the vector index: python -m app.rag.build_index [--if-missing]."""
 import argparse
 import logging
@@ -11,6 +12,7 @@ from app.tools.matcher import DEFAULT_DATA, load_schools
 
 BATCH_SIZE = 32
 
+# Number of chunks to process in each batch when building the index.
 
 def build_index(client: OllamaClient) -> VectorStore:
     chunks = document_chunks() + school_chunks(load_schools(DEFAULT_DATA))

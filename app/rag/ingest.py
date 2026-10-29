@@ -1,3 +1,4 @@
+# Document ingestion for the RAG system: load, clean, chunk, and attach metadata.
 """Document ingestion: load, clean, chunk, and attach metadata."""
 import re
 from dataclasses import dataclass, field
@@ -9,14 +10,14 @@ from app.tools.matcher import School
 SUPPORTED_SUFFIXES = {".txt", ".md", ".pdf"}
 GES_SOURCE = "GES 2019 SHS list (data/schools.csv)"
 
-
-@dataclass
+# Data structure representing a text chunk with associated metadata.
+@dataclass 
 class Chunk:
     id: str
     text: str
     metadata: dict = field(default_factory=dict)
 
-
+# Clean and normalise text for consistent chunking.
 def clean_text(text: str) -> str:
     """Normalise whitespace and line endings while keeping paragraph breaks."""
     text = text.replace("\r\n", "\n").replace("\r", "\n").replace("\u00a0", " ")
@@ -24,7 +25,7 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
-
+# Split an over-long paragraph into smaller pieces based on sentence boundaries.
 def _split_long(paragraph: str, size: int) -> list[str]:
     """Split an over-long paragraph on sentence boundaries, hard-slicing only as a last resort."""
     pieces, current = [], ""
@@ -45,6 +46,7 @@ def _split_long(paragraph: str, size: int) -> list[str]:
     return pieces
 
 
+# Pack paragraphs into chunks of at most ~size characters, carrying a short overlap forward.
 def chunk_text(text: str, size: int = config.CHUNK_SIZE, overlap: int = config.CHUNK_OVERLAP) -> list[str]:
     """Pack paragraphs into chunks of at most ~size characters, carrying a short overlap forward."""
     if overlap >= size:
@@ -64,7 +66,7 @@ def chunk_text(text: str, size: int = config.CHUNK_SIZE, overlap: int = config.C
         chunks.append(current)
     return chunks
 
-
+# Read the content of a file, supporting PDF and text files.
 def _read_file(path: Path) -> str:
     if path.suffix.lower() == ".pdf":
         import pdfplumber
@@ -73,7 +75,7 @@ def _read_file(path: Path) -> str:
             return "\n\n".join(page.extract_text() or "" for page in pdf.pages)
     return path.read_text(encoding="utf-8")
 
-
+# Generate chunks from all documents in the knowledge directory.
 def document_chunks(knowledge_dir: Path = config.KNOWLEDGE_DIR) -> list[Chunk]:
     """Chunks from every supported file in the knowledge directory."""
     chunks: list[Chunk] = []
@@ -94,8 +96,18 @@ def document_chunks(knowledge_dir: Path = config.KNOWLEDGE_DIR) -> list[Chunk]:
     return chunks
 
 
+# Generate chunks for each school, capturing key details for retrieval.
 def school_chunks(schools: list[School]) -> list[Chunk]:
     """One short profile chunk per school so retrieval can answer questions about individual schools."""
+    chunks: list[Chunk] = []
+    for i, school in enumerate(schools):
+        text = f"{school.name}\n{school.address}\n{school.category}\n{school.eligibility_bands}"
+        chunks.append(Chunk(
+            id=f"{school.name}#{i}",
+            text=text,
+            metadata={"source": GES_SOURCE, "source_type": "school", "chunk_index": i},
+        ))
+    return chunks
     chunks = []
     for i, s in enumerate(schools):
         programmes = ", ".join(p.replace("_", " ") for p in s.programmes) or "none listed"

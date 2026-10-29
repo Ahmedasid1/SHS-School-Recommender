@@ -24,7 +24,7 @@ guaranteed.
 promise a placement.
 6. Be concise. Name the source of facts you take from search_knowledge."""
 
-_V3_GROUNDED_STRUCTURED = _V2_GROUNDED + """
+_V3_GROUNDED_STRUCTURED = _V2_GROUNDED + """ 
 
 Format every answer as:
 Summary: one sentence.

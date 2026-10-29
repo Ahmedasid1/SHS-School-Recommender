@@ -9,11 +9,11 @@ from app import config
 
 logger = logging.getLogger(__name__)
 
-
+# Custom exception and client for interacting with the Ollama LLM server
 class LLMError(Exception):
-    """The model server is unreachable, timed out, or returned an unusable response."""
+    """The model server is unreachable, timed out, or returned an unusable response."""  # Raised for any LLM-related errors
 
-
+    # Ollama HTTP client for chat and embeddings
 class OllamaClient:
     def __init__(
         self,
@@ -26,6 +26,7 @@ class OllamaClient:
         self.embed_model = embed_model
         self._http = httpx.Client(base_url=host, timeout=timeout)
 
+# Internal helper for sending POST requests to the Ollama server
     def _post(self, path: str, payload: dict) -> dict:
         try:
             response = self._http.post(path, json=payload)
@@ -41,6 +42,7 @@ class OllamaClient:
         except ValueError as exc:
             raise LLMError("Model server returned invalid JSON.") from exc
 
+# Send a chat message to the Ollama server and return the assistant's response.
     def chat(self, messages: list[dict], tools: list[dict] | None = None, temperature: float = 0.0) -> dict:
         """Send the full message list and return the assistant message dict."""
         payload = {
@@ -57,6 +59,7 @@ class OllamaClient:
             raise LLMError("Model response had no message.")
         return message
 
+    # Send texts to the Ollama server for embedding and return the resulting vectors.
     def embed(self, texts: list[str]) -> list[list[float]]:
         data = self._post("/api/embed", {"model": self.embed_model, "input": texts})
         embeddings = data.get("embeddings")
