@@ -1,9 +1,10 @@
+# Command-line interface for SHS school recommender
 """CLI: python -m app.cli --english 2 --maths 3 --science 2 --social 3 --electives rme=4 ict=2"""
 import argparse
 
 from app.core.recommender import recommend
 
-
+# Entry point for the command-line interface
 def main() -> None:
     p = argparse.ArgumentParser(description="SHS school recommender")
     p.add_argument("--english", type=int, required=True)

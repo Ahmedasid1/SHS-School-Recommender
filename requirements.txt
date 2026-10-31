@@ -3,3 +3,4 @@ uvicorn
 pdfplumber
 pytest
 httpx
+python-multipart

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHS School Recommender</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 1rem; }
+  #log { border: 1px solid #ccc; border-radius: 6px; height: 50vh; overflow-y: auto; padding: .5rem; }
+  .msg { margin: .4rem 0; white-space: pre-wrap; }
+  .user { text-align: right; color: #0b5; }
+  .bot { color: #222; }
+  .err { color: #b00; }
+  fieldset { margin: 1rem 0; }
+  label { display: inline-block; margin: .2rem .6rem .2rem 0; }
+  input[type=number] { width: 3.5rem; }
+  #chat-form { display: flex; gap: .5rem; }
+  #text { flex: 1; }
+  small { color: #666; }
+</style>
+</head>
+<body>
+<h1>SHS School Recommender</h1>
+<small>Unofficial estimate based on the 2019 GES school list. Placement is decided by CSSPS and is never guaranteed.</small>
+
+<fieldset>
+  <legend>1. Your BECE results</legend>
+  <div>
+    <label>Upload (.csv / .json) <input type="file" id="file" accept=".csv,.json"></label>
+  </div>
+  <p>or enter manually (grades 1-9):</p>
+  <div id="manual">
+    <label>English <input type="number" id="english" min="1" max="9"></label>
+    <label>Maths <input type="number" id="mathematics" min="1" max="9"></label>
+    <label>Science <input type="number" id="science" min="1" max="9"></label>
+    <label>Social Studies <input type="number" id="social_studies" min="1" max="9"></label>
+    <div>
+      <label>Elective 1 <input type="text" id="e1n" size="10"> <input type="number" id="e1g" min="1" max="9"></label>
+      <label>Elective 2 <input type="text" id="e2n" size="10"> <input type="number" id="e2g" min="1" max="9"></label>
+    </div>
+    <button type="button" id="manual-btn">Use these grades</button>
+  </div>
+  <p id="status"></p>
+</fieldset>
+
+<div id="log"></div>
+<form id="chat-form">
+  <input id="text" placeholder="Ask about schools..." maxlength="2000" required>
+  <button>Send</button>
+</form>
+
+<script>
+const sessionId = crypto.randomUUID();
+let grades = null;              // confirmed grades, sent with every chat message
+const $ = id => document.getElementById(id);
+
+function add(cls, text) {
+  const d = document.createElement("div");
+  d.className = "msg " + cls;
+  d.textContent = text;       // textContent: never render model/user text as HTML
+  $("log").append(d);
+  $("log").scrollTop = $("log").scrollHeight;
+}
+
+function detail(data) {
+  return typeof data.detail === "string" ? data.detail : JSON.stringify(data.detail);
+}
+
+function show(data) {
+  grades = data.grades;
+  $("status").textContent = `Grades confirmed. Aggregate ${data.aggregate}, estimated categories: ${data.estimated_categories.join(", ") || "none"}.`;
+}
+
+async function send(url, options) {
+  const res = await fetch(url, options);
+  const data = await res.json();
+  if (!res.ok) throw new Error(detail(data));
+  return data;
+}
+
+$("file").addEventListener("change", async e => {
+  const form = new FormData();
+  form.append("file", e.target.files[0]);
+  try { show(await send("/results/upload", { method: "POST", body: form })); }
+  catch (err) { $("status").textContent = "Upload failed: " + err.message; }
+});
+
+$("manual-btn").addEventListener("click", async () => {
+  const n = id => Number($(id).value);
+  const electives = {};
+  for (const i of [1, 2]) {
+    const name = $(`e${i}n`).value.trim();
+    if (name) electives[name] = n(`e${i}g`);
+  }
+  const body = { english: n("english"), mathematics: n("mathematics"), science: n("science"),
+                 social_studies: n("social_studies"), electives };
+  try {
+    show(await send("/results/manual", { method: "POST", headers: { "Content-Type": "application/json" },
+                                          body: JSON.stringify(body) }));
+  } catch (err) { $("status").textContent = "Invalid grades: " + err.message; }
+});
+
+$("chat-form").addEventListener("submit", async e => {
+  e.preventDefault();
+  const message = $("text").value.trim();
+  if (!message) return;
+  $("text").value = "";
+  add("user", message);
+  try {
+    const data = await send("/chat", { method: "POST", headers: { "Content-Type": "application/json" },
+                                       body: JSON.stringify({ session_id: sessionId, message, grades }) });
+    add("bot", data.answer);
+  } catch (err) { add("err", err.message); }
+});
+</script>
+</body>
+</html>

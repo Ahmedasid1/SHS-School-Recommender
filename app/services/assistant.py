@@ -1,3 +1,5 @@
+
+# Assistant module for handling user queries with tool-calling capabilities.    
 """The assistant: a bounded tool-calling loop around the LLM."""
 import json
 import logging

@@ -1,3 +1,6 @@
+
+# This module provides functionality to match a candidate's aggregate score
+# to eligible schools and programmes based on various filters.
 """Match a candidate's aggregate to eligible schools and programmes."""
 import csv
 from dataclasses import dataclass
@@ -10,7 +13,7 @@ PROGRAMMES = ("agric", "business", "technical", "home_economics", "visual_arts",
 _GENDER_ALIASES = {"male": "boys", "boy": "boys", "boys": "boys",
                    "female": "girls", "girl": "girls", "girls": "girls"}
 
-
+# Data structures and functions for matching schools based on candidate criteria.
 @dataclass(frozen=True)
 class School:
     name: str
@@ -20,6 +23,7 @@ class School:
     residency: str
     programmes: tuple[str, ...]
 
+# Function to load schools from a CSV file into School dataclass instances.
 
 def load_schools(path: Path = DEFAULT_DATA) -> list[School]:
     with open(path, newline="", encoding="utf-8") as f:
@@ -35,7 +39,7 @@ def load_schools(path: Path = DEFAULT_DATA) -> list[School]:
             for r in csv.DictReader(f)
         ]
 
-
+# Function to match schools based on candidate's aggregate and selected filters.
 def match_schools(
     aggregate: int,
     schools: list[School],

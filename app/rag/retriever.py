@@ -1,3 +1,5 @@
+# Retrieval module for the RAG system.
+
 """Retrieval: embed the query, search the index, and drop weak matches."""
 import logging
 from pathlib import Path
@@ -12,11 +14,11 @@ logger = logging.getLogger(__name__)
 DOCUMENT_PREFIX = "search_document: "
 QUERY_PREFIX = "search_query: "
 
-
+# Custom exception for retrieval-related errors.
 class RetrievalError(Exception):
     """The index is missing, stale, or the embedding call failed."""
 
-
+# Retriever class for performing query retrieval from the vector store.
 class Retriever:
     def __init__(
         self,
@@ -30,7 +32,7 @@ class Retriever:
         self.top_k = top_k
         self.min_score = min_score
         self._store: VectorStore | None = None
-
+ # Load the vector store if it hasn't been loaded yet.
     def _load(self) -> VectorStore:
         if self._store is None:
             if not self.index_path.exists():
@@ -45,7 +47,7 @@ class Retriever:
                 )
             self._store = store
         return self._store
-
+# Retrieve relevant hits from the vector store based on the query.
     def retrieve(self, query: str, source_type: str | None = None) -> list[Hit]:
         """Hits at or above the minimum score. An empty list means no supporting evidence was found."""
         if not query.strip():

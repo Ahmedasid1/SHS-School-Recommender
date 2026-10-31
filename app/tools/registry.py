@@ -1,7 +1,8 @@
+# This module defines the argument models and tool specifications for the LLM to interact with the system.
 """Tools the LLM may call. Each wraps deterministic code or retrieval, validates its
 arguments, and returns plain JSON-able data. Errors are returned (not raised) so the
 model can correct itself."""
-import ast
+import ast 
 import json
 import logging
 from collections import Counter
