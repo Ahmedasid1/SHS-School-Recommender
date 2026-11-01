@@ -4,3 +4,4 @@ pdfplumber
 pytest
 httpx
 python-multipart
+rapidocr-onnxruntime

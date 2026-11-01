@@ -100,15 +100,6 @@ def document_chunks(knowledge_dir: Path = config.KNOWLEDGE_DIR) -> list[Chunk]:
 def school_chunks(schools: list[School]) -> list[Chunk]:
     """One short profile chunk per school so retrieval can answer questions about individual schools."""
     chunks: list[Chunk] = []
-    for i, school in enumerate(schools):
-        text = f"{school.name}\n{school.address}\n{school.category}\n{school.eligibility_bands}"
-        chunks.append(Chunk(
-            id=f"{school.name}#{i}",
-            text=text,
-            metadata={"source": GES_SOURCE, "source_type": "school", "chunk_index": i},
-        ))
-    return chunks
-    chunks = []
     for i, s in enumerate(schools):
         programmes = ", ".join(p.replace("_", " ") for p in s.programmes) or "none listed"
         text = (

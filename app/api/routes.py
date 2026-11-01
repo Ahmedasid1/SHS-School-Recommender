@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, HTTPException, UploadFile  # FastAPI imp
 from pydantic import BaseModel, Field                # Pydantic imports for defining request and response models
 
 from app.core.calculator import CORE_SUBJECTS, compute_aggregate, estimated_categories
-from app.services.results import MAX_UPLOAD_BYTES, ResultsParseError, parse_upload
+from app.services.results import MAX_BINARY_BYTES, ResultsParseError, parse_upload
 from app.core.recommender import recommend         # Import the recommend function for school recommendations
 from app.llm.client import LLMError                     # Import the LLMError exception for handling assistant errors
 from app.schemas import Grades
@@ -66,7 +66,10 @@ def chat(body: ChatRequest, assistant: Assistant = Depends(get_assistant)):
         session["grades"] = body.grades
     context = [_grades_context(session["grades"])] if session["grades"] else []
     try:
-        result = assistant.ask(body.message, context + session["history"])
+        confirmed = session["grades"]
+        tool_grades = confirmed.model_dump(include={"english", "mathematics", "science", "social_studies",
+                                                    "electives"}) if confirmed else None
+        result = assistant.ask(body.message, context + session["history"], tool_grades)
     except LLMError as exc:
         raise HTTPException(status_code=503, detail=f"The assistant is unavailable: {exc}")
     session["history"] += [{"role": "user", "content": body.message},
@@ -94,7 +97,7 @@ def results_manual(body: Grades):
 
 @router.post("/results/upload", response_model=ResultsResponse)
 async def results_upload(file: UploadFile):
-    content = await file.read(MAX_UPLOAD_BYTES + 1)
+    content = await file.read(MAX_BINARY_BYTES + 1)
     try:
         grades = parse_upload(file.filename or "", content)
     except ResultsParseError as exc:
@@ -104,14 +107,19 @@ async def results_upload(file: UploadFile):
 
 # Model for the school recommendation response
 class RecommendationResponse(BaseModel):
-    schools: list[dict]  # The list of recommended schools
+    aggregate: int
+    estimated_categories: list[str]
+    total_schools: int
+    schools_by_category: dict[str, list[dict]]
+    category_estimate_note: str
+    placement_note: str
 
 # Endpoint for recommending schools based on student grades and preferences
 @router.post("/recommend", response_model=RecommendationResponse)
 def recommend_schools(body: Grades):
     core = {k: getattr(body, k) for k in ("english", "mathematics", "science", "social_studies")}
     try:
-        schools = recommend(core, body.electives, body.gender, body.region, body.residency, body.programme)
-        return RecommendationResponse(schools=schools)  
+        result = recommend(core, body.electives, body.gender, body.region, body.residency, body.programme)
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc))
+    return RecommendationResponse(**result)

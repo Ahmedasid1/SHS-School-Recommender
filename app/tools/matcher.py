@@ -39,6 +39,9 @@ def load_schools(path: Path = DEFAULT_DATA) -> list[School]:
             for r in csv.DictReader(f)
         ]
 
+_REGION_ALIASES = {"accra": "greater accra"}
+
+
 # Function to match schools based on candidate's aggregate and selected filters.
 def match_schools(
     aggregate: int,
@@ -57,7 +60,7 @@ def match_schools(
             continue
         if wanted_gender and s.gender not in ("mixed", wanted_gender):
             continue
-        if region and s.region.lower() != region.lower():
+        if region and s.region.lower() != _REGION_ALIASES.get(region.strip().lower(), region.strip().lower()):
             continue
         if residency and residency.lower() not in s.residency.split("/"):
             continue

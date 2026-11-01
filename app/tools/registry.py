@@ -5,6 +5,7 @@ model can correct itself."""
 import ast 
 import json
 import logging
+import re
 from collections import Counter
 from typing import Literal
 
@@ -33,6 +34,14 @@ class _Filters(BaseModel):
     region: str | None = None
     residency: Literal["day", "boarding"] | None = None
     programme: str | None = None
+
+    @field_validator("gender", "region", "residency", "programme", mode="before")
+    @classmethod
+    def _blank_to_none(cls, value):
+        # Small models send the string "null" for unused filters.
+        if isinstance(value, str) and value.strip().lower() in ("", "null", "none", "any", "n/a"):
+            return None
+        return value
 
     @field_validator("gender", "residency", mode="before")
     @classmethod
@@ -104,6 +113,19 @@ TOOL_SPECS = [
 TOOL_NAMES = ("compute_aggregate", "find_schools", "recommend_schools", "search_knowledge")
 
 
+def _lenient_tool_call(content: str) -> dict | None:
+    """Malformed JSON (e.g. an unquoted value): keep the tool name and the simple "key":value pairs."""
+    named = re.search(r'"name"\s*:\s*"(\w+)"', content)
+    name = named.group(1) if named and named.group(1) in TOOL_NAMES else next((t for t in TOOL_NAMES if t in content), None)
+    if not name:
+        return None
+    arguments: dict = {}
+    for key, value in re.findall(r'"(\w+)"\s*:\s*("[^"]*"|-?\d+)', content):
+        if key != "name":
+            arguments[key] = json.loads(value)
+    return {"name": name, "arguments": arguments}
+
+
 def parse_text_tool_call(content: str) -> dict | None:
     """Recover a tool call a small model wrote as plain text instead of issuing it properly.
 
@@ -114,7 +136,7 @@ def parse_text_tool_call(content: str) -> dict | None:
     try:
         obj = json.loads(content[start:end + 1])
     except ValueError:
-        return None
+        return _lenient_tool_call(content)
     if not isinstance(obj, dict):
         return None
     name = obj.get("name") if obj.get("name") in TOOL_NAMES else next((t for t in TOOL_NAMES if t in content), None)
@@ -141,8 +163,9 @@ def _coerce(arguments: dict) -> dict:
 
 
 class Toolbox:
-    def __init__(self, retriever: Retriever):
+    def __init__(self, retriever: Retriever, grades: dict | None = None):
         self.retriever = retriever
+        self.grades = grades  # user-confirmed grades; override whatever the model passes
         self._schools = None
         self.sources: list[dict] = []
 
@@ -166,9 +189,15 @@ class Toolbox:
         }
         if name not in handlers:
             return {"error": f"Unknown tool '{name}'. Available: {', '.join(handlers)}"}
+        arguments = _coerce(arguments)
+        if self.grades and name in ("find_schools", "recommend_schools"):
+            filters = {k: arguments.get(k) for k in _Filters.model_fields}
+            name, arguments = "recommend_schools", {**self.grades, **filters}
+        elif self.grades and name == "compute_aggregate":
+            arguments = dict(self.grades)
         model, handler = handlers[name]
         try:
-            args = model(**_coerce(arguments))
+            args = model(**arguments)
             return handler(args)
         except ValidationError as exc:
             return {"error": "Invalid arguments: " + "; ".join(

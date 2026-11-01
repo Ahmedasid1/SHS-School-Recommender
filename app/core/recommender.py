@@ -29,8 +29,8 @@ def recommend(
         "total_schools": len(matches), 
         "schools_by_category": by_category,
         "category_estimate_note": (
-            "Categories are estimated using the official aggregate cutoffs, "
-            "and represent eligibility bands."
+            "Categories are estimated using unofficial aggregate cutoffs, "
+            "not official CSSPS rules."
         ),
         "placement_note": (
             "This estimate is not a CSSPS placement prediction or an admission guarantee. "

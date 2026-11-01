@@ -33,8 +33,8 @@ class Assistant:
         self.retriever = retriever or Retriever(self.client)
         self.prompt_version = prompt_version
 
-    def ask(self, message: str, history: list[dict] | None = None) -> AssistantResult:
-        toolbox = Toolbox(self.retriever)
+    def ask(self, message: str, history: list[dict] | None = None, grades: dict | None = None) -> AssistantResult:
+        toolbox = Toolbox(self.retriever, grades)
         messages = [{"role": "system", "content": get_system_prompt(self.prompt_version)},
                     *(history or []), {"role": "user", "content": message}]
         calls: list[dict] = []
